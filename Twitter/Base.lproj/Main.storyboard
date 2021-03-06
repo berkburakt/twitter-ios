@@ -49,7 +49,7 @@
         <!--Navigation Controller-->
         <scene sceneID="5rt-wc-qSd">
             <objects>
-                <navigationController modalPresentationStyle="overFullScreen" id="7YR-rO-DsE" sceneMemberID="viewController">
+                <navigationController modalPresentationStyle="fullScreen" id="7YR-rO-DsE" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Pes-Oz-XIg"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h7t-Xt-yNc">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
@@ -109,7 +109,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXX-1N-56I" userLabel="favButton">
-                                                    <rect key="frame" x="388" y="71.333333333333314" width="30" height="30"/>
+                                                    <rect key="frame" x="388" y="71.333333333333329" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="30" id="4lV-r3-YIf"/>
                                                         <constraint firstAttribute="height" constant="30" id="alq-ep-ZR3"/>
@@ -120,7 +120,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igz-MZ-T1B" userLabel="rtButton">
-                                                    <rect key="frame" x="348" y="71.333333333333314" width="30" height="30"/>
+                                                    <rect key="frame" x="348" y="71.333333333333329" width="30" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="PeH-cJ-yKE"/>
                                                         <constraint firstAttribute="width" constant="30" id="yyG-eV-9XG"/>
@@ -241,7 +241,7 @@
         <!--TweetNavigationController-->
         <scene sceneID="Cr2-kS-aQM">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="overFullScreen" id="Ecu-ht-Y5M" userLabel="TweetNavigationController" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Ecu-ht-Y5M" userLabel="TweetNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UPW-AL-5DN">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
