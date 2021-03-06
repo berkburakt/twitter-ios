@@ -21,9 +21,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        loadTweets()
         myRefreshControl.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
         tableView.refreshControl = myRefreshControl
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        loadTweets()
     }
     
     @objc private func loadTweets() {
@@ -80,6 +84,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         cell.userNameLabel.text = user["name"] as? String
         cell.tweetContentLabel.text = tweetArray[indexPath.row]["text"] as? String
+        cell.favorited = tweetArray[indexPath.row]["favorited"] as! Bool
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
+        cell.retweeted = tweetArray[indexPath.row]["retweeted"] as! Bool
         
         return cell
     }
